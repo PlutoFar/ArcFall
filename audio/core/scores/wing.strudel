@@ -1,0 +1,12 @@
+// 逆光裁决 · 140 BPM
+setcps(140/240)
+const compose = ({note,s,stack})=>{
+ const bass=note('<[a1 ~ a2 e2 ~ a1 b1 c2] [a1 ~ ~ g1 a1 ~ e2 ~] [f1 f2 ~ c2 ~ f1 e1 ~] [e1 ~ b1 e2 f2 e2 gs1 ~]>').s('sawtooth').gain(.28).lpf(1500);
+ const drum=stack(s('bd ~ ~ bd ~ ~ ~ [bd ~]').gain(.62),s('~ ~ sd ~').gain(.37).room(.5),s('hh ~ hh hh').gain(.07));
+ const A=note('<[a4 ~ e4 ~ b4 a4 g4 ~] [c5 ~ b4 a4 ~ e4 ~ ~] [a4 ~ g4 f4 ~ c4 e4 ~] [gs4 ~ b4 ~ a4 gs4 e4 ~]>').s('sawtooth').gain(.20).lpf(6100).room(.58).delay(.18).legato(1.1);
+ const B=note('<[a5 ~ e5 b5 a5 ~ g5 e5] [c6 b5 a5 ~ e5 ~ d5 e5] [a5 g5 f5 ~ e5 c5 e5 ~] [gs5 b5 a5 gs5 e5 ~ a5 ~]>').s('sawtooth').gain(.17).room(.6).delay(.22);
+ const chord=note('<[a3,e4,b4] [a3,c4,g4] [f3,c4,e4] [e3,b3,gs4]>').s('supersaw').gain(.1).legato(2).room(.7).orbit(1);
+ return{A:stack(A,bass,drum,chord),B:stack(B,bass,drum,chord),C:stack(A.slow(2),bass,drum.lpf(2800),s('white ~').slow(4).gain(.13)),D:stack(B,bass,drum,chord,s('cr ~ ~ ~').slow(2).gain(.18).orbit(2))};
+};
+const sections = compose({note,s,stack,rev});
+arrange([8,sections.C],[8,sections.A],[8,sections.A],[8,sections.B],[8,sections.C],[8,sections.B],[8,sections.D],[8,sections.D])

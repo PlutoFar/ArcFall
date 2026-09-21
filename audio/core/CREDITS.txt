@@ -1,0 +1,14 @@
+弧光战场 · V8 音乐
+
+十首原创乐谱使用 Strudel 编写。合成音色、编曲和混音处理见对应源码。
+
+鼓、镲、铁砧录音：Versilian Community Sample Library
+Versilian Studios LLC / Sam Gossner
+https://github.com/sgossner/VCSL
+CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+使用经过裁剪、均衡、饱和与分层处理的录音。
+
+TR-808 底鼓录音：Michael Fischer / Technopolis
+https://github.com/tidalcycles/sounds-tr808-fischer
+CC0 1.0 Universal。与合成低鼓和 VCSL 大鼓分层混合。
