@@ -173,7 +173,7 @@ ${o}`]}function w5(){return`盾牌耐久为生命上限的 ${Z(j0.durabilityFrac
       </div>
       <div class="credits">
         背景音乐：Suno 生成，Astra 微调。<a
-          href="/audio/arc-pressure-v3/CREDITS.txt"
+          href="/licenses/CREDITS-arc-pressure-v3.txt"
           target="_blank"
           >音乐署名</a
         >
@@ -182,7 +182,7 @@ ${o}`]}function w5(){return`盾牌耐久为生命上限的 ${Z(j0.durabilityFrac
           target="_blank"
           rel="noreferrer"
           >Philippe Groarke / Socapex</a
-        >（CC BY-SA 3.0，<a href="/audio/foley-v7/CREDITS.txt" target="_blank">完整署名与改编说明</a
+        >（CC BY-SA 3.0，<a href="/licenses/CREDITS-foley-v7.txt" target="_blank">完整署名与改编说明</a
         >）；<a href="https://kenney.nl/assets/impact-sounds" target="_blank" rel="noreferrer"
           >Kenney Impact Sounds</a
         >、<a href="https://kenney.nl/assets/rpg-audio" target="_blank" rel="noreferrer"
